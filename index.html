@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AFD Quiz — Análise Forense Digital</title>
+  <meta name="description" content="Plataforma de estudo para Análise Forense Digital (ISTEC) — exames de prática, exames reais, simulados, flashcards, mapa mental e resumos." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2329e0c9'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AFD</span>
+        <span>
+          Análise Forense Digital
+          <small>Plataforma de estudo · ISTEC</small>
+        </span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Início</a>
+        <a href="flashcards.html">Flashcards</a>
+        <a href="mindmap.html">Mapa Mental</a>
+        <a href="resumos.html">Resumos</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="nav-toggle" id="navToggle" title="Menu" aria-label="Menu">☰</button>
+        <button class="icon-btn" id="resetProgress" title="Limpar progresso">🗑</button>
+        <button class="icon-btn" id="themeToggle" title="Alternar tema">☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">● CTeSP CiberSegurança — 1º Ano / 2º Semestre</span>
+      <h1>Prepara-te para o exame de<br />Análise Forense Digital</h1>
+      <p class="lead">
+        Exames de prática, os enunciados reais para responder online, simulados no formato do exame,
+        flashcards, mapa mental e resumos — tudo construído a partir da sebenta e do material de apoio.
+        Sempre que erras uma resposta, explicamos porquê.
+      </p>
+      <div class="hero-stats">
+        <div class="stat"><b id="statExams">20</b><span>exames de prática</span></div>
+        <div class="stat"><b id="statQuestions">400</b><span>perguntas no total</span></div>
+        <div class="stat"><b id="statReal">2</b><span>exames reais ISTEC</span></div>
+        <div class="stat"><b id="statMock">4</b><span>simulados formato real</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>📚 Área de estudo</h2>
+        <p>Consolida a matéria antes de entrares nos exames.</p>
+      </div>
+      <div class="study-grid">
+        <a class="study-tile" href="flashcards.html">
+          <span class="ic">🗂️</span>
+          <h3>Flashcards</h3>
+          <p>Cartões de estudo com os termos e conceitos essenciais de cada tema.</p>
+        </a>
+        <a class="study-tile" href="mindmap.html">
+          <span class="ic">🧠</span>
+          <h3>Mapa Mental</h3>
+          <p>Toda a matéria organizada visualmente, do geral ao detalhe.</p>
+        </a>
+        <a class="study-tile" href="resumos.html">
+          <span class="ic">📝</span>
+          <h3>Resumos</h3>
+          <p>Notas de estudo condensadas, módulo a módulo.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>★ Exames reais para resposta online</h2>
+        <p>Enunciados originais (Época Normal e Recuperação, 2024/2025) em formato interativo.</p>
+      </div>
+      <div class="real-grid" id="realGrid">
+        <div class="loading"><span class="spinner"></span>a carregar…</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>✎ Simulados no formato do exame real</h2>
+        <p>Perguntas parecidas com as reais, mas diferentes — mesmo formato (V/F + desenvolvimento + caso de estudo).</p>
+      </div>
+      <div class="real-grid" id="mockGrid">
+        <div class="loading"><span class="spinner"></span>a carregar…</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Exames de prática</h2>
+        <p>Escolhe um tema ou percorre todos os 20 exames.</p>
+      </div>
+      <div class="filters" id="topicFilters"></div>
+      <div class="grid" id="examGrid">
+        <div class="loading"><span class="spinner"></span>a carregar exames…</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>AFD Quiz — feito a partir da sebenta e material de apoio da unidade curricular.</span>
+      <span>O progresso fica guardado só neste dispositivo (localStorage).</span>
+    </div>
+  </footer>
+
+  <script src="js/data/manifest.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
